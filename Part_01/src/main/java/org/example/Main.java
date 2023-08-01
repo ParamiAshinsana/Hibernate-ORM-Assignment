@@ -22,8 +22,23 @@ public class Main {
 
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
-        session.persist(book01);
-        session.persist(book02);
+
+        //session.persist(book01);
+        System.out.println("Successfully saved "+book01.getId());
+
+        //session.persist(book02);
+        System.out.println("Successfully saved "+book02.getId());
+
+        System.out.println("\n");
+
+        Book bookS01 = session.get(Book.class,"B001");
+        System.out.println(bookS01);
+
+        System.out.println("\n");
+
+        Book bookS02 = session.get(Book.class,"B002");
+        System.out.println(bookS02);
+
         transaction.commit();
         session.close();
     }
