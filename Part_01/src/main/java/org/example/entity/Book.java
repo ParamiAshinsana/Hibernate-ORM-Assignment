@@ -1,6 +1,11 @@
 package org.example.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Book {
+    @Id
     private String id;
     private String ISBN;
     private String title;
