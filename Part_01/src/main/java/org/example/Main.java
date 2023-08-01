@@ -4,7 +4,6 @@ import org.example.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,22 +23,34 @@ public class Main {
         Transaction transaction = session.beginTransaction();
 
         //session.persist(book01);
-        System.out.println("Successfully saved "+book01.getId());
-
-        //session.persist(book02);
-        System.out.println("Successfully saved "+book02.getId());
-
-        System.out.println("\n");
+//        System.out.println("Successfully saved "+book01.getId());
+//
+//        //session.persist(book02);
+//        System.out.println("Successfully saved "+book02.getId());
+//
+//        System.out.println("\n");
 
         Book bookS01 = session.get(Book.class,"B001");
         System.out.println(bookS01);
+//
+//        System.out.println("\n");
+//
+//        Book bookS02 = session.get(Book.class,"B001");
+//        System.out.println(bookS02);
 
-        System.out.println("\n");
+        if (bookS01!=null) {
 
-        Book bookS02 = session.get(Book.class,"B002");
-        System.out.println(bookS02);
+            bookS01.setISBN("301-3-16-148410-0");
+            bookS01.setTitle("father");
+            bookS01.setAuthor("Williem Gross");
 
-        transaction.commit();
+            transaction.commit();
+
+            System.out.println("Successfully saved "+book01.getId());
+
+        }
+
+        //transaction.commit();
         session.close();
     }
 }
