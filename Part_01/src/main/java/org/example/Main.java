@@ -30,27 +30,28 @@ public class Main {
 //
 //        System.out.println("\n");
 
-        Book bookS01 = session.get(Book.class,"B001");
-        System.out.println(bookS01);
+//        Book bookS01 = session.get(Book.class,"B001");
+//        System.out.println(bookS01);
 //
 //        System.out.println("\n");
 //
 //        Book bookS02 = session.get(Book.class,"B001");
 //        System.out.println(bookS02);
 
-        if (bookS01!=null) {
-
-            bookS01.setISBN("301-3-16-148410-0");
-            bookS01.setTitle("father");
-            bookS01.setAuthor("Williem Gross");
-
-            transaction.commit();
-
-            System.out.println("Successfully saved "+book01.getId());
-
-        }
-
-        //transaction.commit();
+//        if (bookS01!=null) {
+//
+//            bookS01.setISBN("301-3-16-148410-0");
+//            bookS01.setTitle("father");
+//            bookS01.setAuthor("Williem Gross");
+//
+//            transaction.commit();
+//
+//            System.out.println("Successfully saved "+book01.getId());
+//
+//        }
+        session.remove(book02);
+        System.out.println("Successfully deleted "+book02.getId());
+        transaction.commit();
         session.close();
     }
 }
