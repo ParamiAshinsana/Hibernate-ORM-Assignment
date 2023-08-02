@@ -22,19 +22,24 @@ public class Main {
         Transaction transaction = session.beginTransaction();
 
         //session.persist(author01);
-        System.out.println("Successfully saved "+author01.getAuthor_id());
+        //System.out.println("Successfully saved "+author01.getAuthor_id());
         //session.persist(book01);
-        System.out.println("Successfully saved "+book01.getId());
+        //System.out.println("Successfully saved "+book01.getId());
 
-        System.out.println("\n");
+        //System.out.println("\n");
 
-        Book bookPrint01 = session.get(Book.class,"B001");
-        System.out.println(bookPrint01);
+        //Book bookPrint01 = session.get(Book.class,"B001");
+        //System.out.println(bookPrint01);
 
-        System.out.println("\n");
+        //System.out.println("\n");
 
-        Author authorPrint02 = session.get(Author.class,"A001");
-        System.out.println(authorPrint02);
+        //Author authorPrint02 = session.get(Author.class,"A001");
+        //System.out.println(authorPrint02);
+
+        session.remove(author01);
+        System.out.println("Successfully deleted "+author01.getAuthor_id());
+        session.remove(book01);
+        System.out.println("Successfully deleted "+book01.getId());
 
         transaction.commit();
         session.close();
