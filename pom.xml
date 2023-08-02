@@ -8,10 +8,18 @@
     <artifactId>Hibernate-ORM-Assignment</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>Part_01</module>
-        <module>Part_02</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>Part_02_many-to-many</module>-->
+<!--    </modules>-->
+    <!--    <modules>-->
+<!--        <module>Part_01</module>-->
+<!--        <module>Part_02</module>-->
+<!--        <module>Part_02_one-to-many</module>-->
+<!--        <module>Part_02_many-to-many</module>-->
+<!--        <module>Part_02_many-to-many</module>-->
+<!--        <module>Part_02_one-to-one</module>-->
+<!--        <module>Part_02_one-to-many</module>-->
+<!--    </modules>-->
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

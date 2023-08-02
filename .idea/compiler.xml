@@ -7,8 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Part_01" />
-        <module name="Part_02" />
+        <module name="Part_02_one-to-one" />
+        <module name="Part_02_many-to-many" />
+        <module name="Part_02_one-to-many" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Part_01" target="11" />
+      <module name="Part_02_many-to-many" target="11" />
+      <module name="Part_02_one-to-many" target="11" />
+      <module name="Part_02_one-to-one" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
