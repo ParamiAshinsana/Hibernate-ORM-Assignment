@@ -2,6 +2,7 @@ package org.example.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Book {
@@ -9,13 +10,14 @@ public class Book {
     private String id;
     private String ISBN;
     private String title;
-    private String author;
 
+    @OneToOne
+    private Author author;
 
     public Book() {
     }
 
-    public Book(String id, String ISBN, String title, String author) {
+    public Book(String id, String ISBN, String title, Author author) {
         this.id = id;
         this.ISBN = ISBN;
         this.title = title;
@@ -46,11 +48,11 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
@@ -60,9 +62,7 @@ public class Book {
                 "id='" + id + '\'' +
                 ", ISBN='" + ISBN + '\'' +
                 ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
+                ", author=" + author +
                 '}';
     }
-
-
 }
