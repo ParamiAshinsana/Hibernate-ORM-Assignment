@@ -28,24 +28,25 @@ public class Main_M_M {
         book02.setId("B002");
         book02.setISBN("389-33-00-785-01");
         book02.setTitle("The Zombies Island");
-//
-//        List<Author> authorList = new ArrayList<>();
-//        authorList.add(author01);
-//        authorList.add(author02);
-//
-//        List<Book> bookList = new ArrayList<>();
-//        bookList.add(book01);
-//        bookList.add(book02);
-//
-//        author01.setBookList(bookList);
-//        author02.setBookList(bookList);
-//
-//        book01.setAuthorList(authorList);
-//        book02.setAuthorList(authorList);
-//
-//        Session session = FactoryConfiguration.getInstance().getSession();
-//        Transaction transaction = session.beginTransaction();
-//
+
+        List<Author> authorList = new ArrayList<>();
+        authorList.add(author01);
+        authorList.add(author02);
+
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(book01);
+        bookList.add(book02);
+
+        author01.setBookList(bookList);
+        author02.setBookList(bookList);
+
+        book01.setAuthorList(authorList);
+        book02.setAuthorList(authorList);
+
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+
 //        session.persist(author01);
 //        session.persist(author02);
 //
@@ -63,8 +64,8 @@ public class Main_M_M {
 //
 //        System.out.println("\n");
 //
-//        Book bookPrint01 = session.get(Book.class,"B001");
-//        System.out.println(bookPrint01);
+        //Book bookPrint01 = session.get(Book.class,"B001");
+        //System.out.println(bookPrint01);
 
 //        System.out.println("\n");
 //
@@ -81,23 +82,27 @@ public class Main_M_M {
 //        Author authorPrint02 = session.get(Author.class,"A001");
 //        System.out.println(authorPrint02);
 
-//        transaction.commit();
-//        session.close();
+        //transaction.commit();
+        //session.close();
 
 
 
         //delete
-        Session session = FactoryConfiguration.getInstance().getSession();
-        Transaction transaction = session.beginTransaction();
+//        Session session = FactoryConfiguration.getInstance().getSession();
+//        Transaction transaction = session.beginTransaction();
+//
+//        session.remove(author01);
+//        session.remove(author02);
+//
+//        session.remove(book01);
+//        session.remove(book02);
+//
+//        transaction.commit();
+//        session.close();
 
-        session.remove(author01);
-        session.remove(author02);
 
-        session.remove(book01);
-        session.remove(book02);
+        //update
 
-        transaction.commit();
-        session.close();
 
 
 
