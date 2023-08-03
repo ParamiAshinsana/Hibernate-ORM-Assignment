@@ -13,7 +13,7 @@ public class Author {
     private String author_id;
     private String author_name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "authors")
     private List<Book> books;
 
     public Author() {

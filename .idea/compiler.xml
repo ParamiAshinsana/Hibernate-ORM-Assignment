@@ -9,12 +9,12 @@
         <module name="Part_02_one-to-one" />
         <module name="ORM-01-Test-Hibernate" />
         <module name="Part_02_many-to-many" />
+        <module name="Part_02_one-to-many" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="as" target="11" />
       <module name="Part_01" target="11" />
-      <module name="Part_02_one-to-many" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
