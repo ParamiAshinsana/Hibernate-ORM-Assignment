@@ -13,12 +13,13 @@
 <!--    </modules>-->
         <modules>
         <module>Part_01</module>
-        <module>Part_02_one-to-many</module>
-        <module>Part_02_many-to-many</module>
-        <module>Part_02_many-to-many</module>
+<!--        <module>Part_02_one-to-many</module>-->
+<!--        <module>Part_02_many-to-many</module>-->
+<!--        <module>Part_02_many-to-many</module>-->
         <module>Part_02_one-to-one</module>
-        <module>Part_02_one-to-many</module>
-            <module>Part_02_many-to-many</module>
+<!--        <module>Part_02_one-to-many</module>-->
+<!--            <module>Part_02_many-to-many</module>-->
+<!--                        <module>Part_02_many-to-many</module>-->
     </modules>
 
     <properties>
