@@ -27,7 +27,11 @@ public class Main {
 //
 //        //session.persist(book02);
 //        System.out.println("Successfully saved "+book02.getId());
+
+        transaction.commit();
+        session.close();
 //
+        // print
 //        System.out.println("\n");
 
 //        Book bookS01 = session.get(Book.class,"B001");
@@ -37,6 +41,11 @@ public class Main {
 //
 //        Book bookS02 = session.get(Book.class,"B001");
 //        System.out.println(bookS02);
+
+
+        //update
+
+//        Book bookS01 = session.get(Book.class,"B001");
 
 //        if (bookS01!=null) {
 //
@@ -49,9 +58,12 @@ public class Main {
 //            System.out.println("Successfully saved "+book01.getId());
 //
 //        }
-        session.remove(book02);
-        System.out.println("Successfully deleted "+book02.getId());
-        transaction.commit();
-        session.close();
+
+        //remove
+//        session.remove(book02);
+//        System.out.println("Successfully deleted "+book02.getId());
+//        transaction.commit();
+//        session.close();
+
     }
 }
