@@ -2,6 +2,7 @@ package org.example.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
 import java.util.List;
@@ -13,17 +14,27 @@ public class Book {
     private String ISBN;
     private String title;
 
-    @OneToMany
-    private List<Author> authors;
+    @ManyToOne
+   private Author authors;
 
     public Book() {
     }
 
-    public Book(String id, String ISBN, String title, List<Author> authors) {
+    public Book(String id, String ISBN, String title, Author authors) {
         this.id = id;
         this.ISBN = ISBN;
         this.title = title;
         this.authors = authors;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id='" + id + '\'' +
+                ", ISBN='" + ISBN + '\'' +
+                ", title='" + title + '\'' +
+                ", authors=" + authors +
+                '}';
     }
 
     public String getId() {
@@ -50,21 +61,11 @@ public class Book {
         this.title = title;
     }
 
-    public List<Author> getAuthors() {
+    public Author getAuthors() {
         return authors;
     }
 
-    public void setAuthors(List<Author> authors) {
+    public void setAuthors(Author authors) {
         this.authors = authors;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id='" + id + '\'' +
-                ", ISBN='" + ISBN + '\'' +
-                ", title='" + title + '\'' +
-                ", authors=" + authors +
-                '}';
     }
 }
