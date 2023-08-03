@@ -28,6 +28,12 @@ public class Main {
         book02.setTitle("The Zombies Island");
         book02.setAuthor(author02);
 
+        Book book03 = new Book();
+        book03.setId("B002");
+        book03.setISBN("389-33-00-785-01");
+        book03.setTitle("The Zombies Island");
+        book03.setAuthor(author01);
+
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
