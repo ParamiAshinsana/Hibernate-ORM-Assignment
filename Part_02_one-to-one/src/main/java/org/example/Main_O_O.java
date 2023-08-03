@@ -6,7 +6,7 @@ import org.example.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class Main {
+public class Main_O_O {
     public static void main(String[] args) {
         Author author01 = new Author();
         author01.setAuthor_id("A001");

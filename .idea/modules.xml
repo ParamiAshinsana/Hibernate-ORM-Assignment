@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/Part_02_many-to-many/Part_02_many-to-many.iml" filepath="$PROJECT_DIR$/Part_02_many-to-many/Part_02_many-to-many.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Part_02_one-to-many/Part_02_one-to-many.iml" filepath="$PROJECT_DIR$/Part_02_one-to-many/Part_02_one-to-many.iml" />
-    </modules>
-  </component>
-</project>

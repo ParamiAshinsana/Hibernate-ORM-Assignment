@@ -5,11 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Part_02_many-to-many/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/Part_02_many-to-many/pom.xml" />
         <option value="$PROJECT_DIR$/Part_02_one-to-many/pom.xml" />
       </set>
     </option>
